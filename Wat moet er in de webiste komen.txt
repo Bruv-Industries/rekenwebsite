@@ -1,0 +1,5 @@
+groep 4 t/m 50
+groep 5 t/m 100
+groep 6 oneindig
+
+(+, -, /, *)

@@ -5,6 +5,83 @@
 <style>
 * {box-sizing: border-box;}
 
+#doos {
+  margin: auto;
+  width: 1200px;
+  margin-top: 20px;
+  }
+
+#rij1{
+  width:300px;
+  height:736px;
+  float:left;
+}
+#rij2{
+  width:300px;
+  height:736px;
+  float:left;
+}
+
+#fotoblok1{
+  background-size: cover;
+  width:250px;
+  height:250px;
+  margin-left:50px;
+  margin-top:50px;
+  float:left;
+  background-image: url(foto_1.jpg);
+  background-repeat: no-repeat;
+  
+}
+#fotoblok2{
+  background-size: cover;
+  width:250px;
+  height:250px;
+  float:right;
+  margin-right:50px;
+  margin-top:50px;
+  background-image: url(foto_2.jpg);
+  background-repeat: no-repeat;
+}
+#fotoblok3{
+  background-size: cover;
+  width:250px;
+  height:250px;
+  float:left;
+  margin-left:50px;
+  margin-bottom:50px;
+  float:left;
+  margin-top:100px;
+  background-image: url(foto_3.jpg);
+  background-repeat: no-repeat;
+
+}
+#fotoblok4{
+  background-size: cover;
+  width:250px;
+  height:250px;
+  float:right;
+  margin-right:50px;
+  margin-bottom:50px;
+  float:right;
+  margin-top:100px;
+  background-image: url(foto_4.jpg);
+  background-repeat: no-repeat;
+}
+
+#centervak {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  width: 600px;
+  height: 736px;
+  color: black;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 22px;
+}
+
+
 body {
   margin: 0;
   font-family: Arial;
@@ -22,20 +99,6 @@ body {
   background: #555;
 }
 
-#div2 { 
-background-color:rgba(255, 255, 255, 0.5);
-text-align: center;
-width: 1400px;
-height: 700px;
-margin:auto;
-color: black;
- }
-
-#div2 p{
-  opacity: 1.0;
-  color: rgba(0,0,0,1);
-  text-align: center;
- }
 
 .topnav {
   overflow: hidden;
@@ -68,7 +131,7 @@ color: black;
   margin-top: 8px;
   margin-right: 20px;
   border: none;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -85,6 +148,7 @@ color: black;
     border: 1px solid #ccc;  
   }
 
+
 </style>
 </head>
 <body>
@@ -96,19 +160,26 @@ color: black;
   <a href="informatie.html">Informatie</a>
   <a href="contact.html">Contact</a>
   <a class="active" href="foto.html">Foto's</a>
-  <a href="vragen.html">Vragen</a>
   <input type="text" placeholder="Search..">
 </div>
 
-<div id="div2"> 
-  <div id="full" style="padding-right: 30px;">
-    <div id="div3">
-  
-</div>
-    <h1>Foto's</h1>
-    <p>.</p>
+
+
+  <div id="doos">
+    <div id="rij1">
+      <div id="fotoblok1"> </div>
+      <div id="fotoblok3"> </div>
+    </div>
+    <div id="centervak">
+        <h1>Titel</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa sed elementum tempus egestas sed sed. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Turpis cursus in hac habitasse. Quisque sagittis purus sit amet volutpat consequat mauris nunc. Nisi lacus sed viverra tellus in hac habitasse platea. Accumsan lacus vel facilisis volutpat est. Cursus risus at ultrices mi tempus imperdiet nulla. Purus non enim praesent elementum facilisis leo vel. Ultricies mi quis hendrerit dolor magna eget est lorem. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Netus et malesuada fames ac turpis egestas maecenas pharetra. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Purus gravida quis blandit turpis cursus in hac. Urna neque viverra justo nec ultrices dui sapien eget. Aliquam malesuada bibendum arcu vitae. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat.</p>
+    </div>
+    <div id="rij2">
+      <div id="fotoblok2"> </div>
+      <div id="fotoblok4"> </div>
+    </div>
   </div>
-</div>
+
 
 </body>
 </html>

@@ -29,6 +29,7 @@ width: 1400px;
 height: 700px;
 margin:auto;
 color: black;
+font-size:30px  ;
  }
 
 #div2 p{
@@ -68,7 +69,7 @@ color: black;
   margin-top: 8px;
   margin-right: 20px;
   border: none;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -85,6 +86,67 @@ color: black;
     border: 1px solid #ccc;  
   }
 
+  #onderwerp .input text{
+    width: 100px;
+    height: 20px;
+  }
+
+</style>
+
+
+
+
+<style>
+
+.container {
+  border-radius: 5px;
+  background-color:rgba(255, 255, 255, 0.5);
+  padding-top:10px;
+  margin-top:20px;
+  
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #2196F3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#email{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+h3{
+  font-size:40px;
+}
+
+.container input[type=text], select {
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.inhoud{
+  width:600px;
+  height:200px;
+}
+
+
+
 </style>
 </head>
 <body>
@@ -96,17 +158,59 @@ color: black;
   <a href="informatie.html">Informatie</a>
   <a class="active" href="contact.html">Contact</a>
   <a href="foto.html">Foto's</a>
-  <a href="vragen.html">Vragen</a>
-  <input type="text" placeholder="Search..">
+  <input id="zoekbalk" type="text" placeholder="Search..">
 </div>
 
 <div id="div2"> 
-  <div id="full" style="padding-right: 30px;">
-    <div id="div3">
   
+
+
+
+<div class="container">
+  <h3>Contact Formulier</h3>
+  <hr>
+
+  <form action="submit.php" method="post">
+    <label for="Onderwerp">Het Onderwerp:</label>
+    <input type="text" id="Onderwerp" name="Onderwerp" placeholder="Onderwerp">
+
+    <br>
+
+    <label for="volledige naam">vul hier je volledige naam in:</label>
+    <input type="text" id="volledige naam" name="Naam" placeholder="Johan Verberk">
+
+    <br>
+
+    <label for="Rol">Wat is uw rol?</label>
+    <select id="Rol" name="Rol">
+      <option value="Leerling" name="leerling">Leerling</option>
+      <option value="Ouder/verzorger" name="Ouder/verzorger">Ouder/verzorger</option>
+      <option value="Bedrijf" name="Bedrijf">Bedrijf</option>
+      <option value="Opvangsverblijf" name="Opvangsverblijf">Opvangsverblijf</option>
+      <option value="Anders.." name="Anders">Anders..</option>
+    </select>
+
+    <br>
+    
+      <label for="email">Vul hier je Email in:</label>
+        <input type="email" id="email" name="email" placeholder="johan.verberk@gmail.com">  
+    <br>
+
+    <label for="email">Telefoonnummer:</label>
+        <input type="text" id="telefoonnummer" name="telefoonnummer" placeholder="0485293510">
+    
+
+    <br>
+
+    <label for="Inhoud">Inhoud</label>
+    <br>
+    <textarea id="Inhoud" name="Inhoud" placeholder="Typ hier uw bericht" style="height:200px;width: 100%;"></textarea>
+
+    <br>
+
+    <input type="submit" value="Versturen">
+  </form>
 </div>
-    <h1>Contact</h1>
-    <p>.</p>
   </div>
 </div>
 
